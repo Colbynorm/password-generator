@@ -15,17 +15,22 @@
       <div class="card">
         <div class="card-header">
           <h2>Create A New Password</h2>
+          <p>How Many Characters? <input type="number" id="charNum" value="20" min="8" max="128">
+            Number: <input type="checkbox" id="num">
+            Symbol: <input type="checkbox" id="sym">
+
         </div>
         <div class="card-body">
           <textarea
             readonly
-            id="password"
+            id="yourPw"
             placeholder="Your New Password"
             aria-label="Generated Password"
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Create Password</button>
+          <button id="submit" class="btn">Create Password</button>
+          <button id="copy to clipboard" class="btn">Copy To Clipboard</button>
         </div>
       </div>
     </div>
